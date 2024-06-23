@@ -7,7 +7,7 @@
 ## Xorを作る
 
 - connectionに名前をつける
-  ![alt text](image.png)
+  ![alt text](img/image.png)
 - チップごとにゲート図を書く
 - チップごとに、そのチップとそのすべての接続を記述するHDLステートメントを1つ記述する
 
@@ -91,11 +91,11 @@ CHIP Add16 {
   - Mux
   - ...
 - Project1で作ったのが今後の土台になる。
-- ![alt text](image-1.png)
+- ![alt text](img/image-1.png)
 
 ## Multiplexor(Mux)
 
-![alt text](image-2.png)
+![alt text](img/image-2.png)
 
 ```
 if (sel==0)
@@ -134,7 +134,7 @@ else
 - NANdを作らなければいけないとしたら？
   - NANDゲートのNMOS実装
   - どっちかというと物理学、電子回路の世界。
-    ![alt text](image-3.png)
+    ![alt text](img/image-3.png)
 - 我々が気にするのは「どのように実装されているか」ではなく。インターフェース。
   - →受講者を置いてけぼりにしたあとに「気にしなくていいよ」っていうのはすごく鮮やかだった。
 
@@ -176,7 +176,7 @@ else
   - fは算術関数、論理関数(And, Or等)どちらもある
   - ポイントは「どこまでをハードウェアで実装するか？」で、ハードウェアで実装しないことを決めてもあとからソフトウェアで補強することができる
     - 乗算、除算をALU煮含めない場合でも、ソフトウェア側でいくらでも実装できる
-      ![alt text](image-4.png)
+      ![alt text](img/image-4.png)
 - input
 
   - if zx then x=0
@@ -193,7 +193,7 @@ else
 
 ## まとめ
 
-![alt text](image-5.png)
+![alt text](img/image-5.png)
 
 if out==0 then zr=1 else zr=0
 if out<0 then ng=1, else ng=0
@@ -242,7 +242,7 @@ if out<0 then ng=1, else ng=0
 - out[t] = in[t-1]
 
   - △マークは「時間に依存したチップである」ことを表現
-    ![alt text](image-6.png)
+    ![alt text](img/image-6.png)
 - 1-bit Register
 
   - if load(t-1) then out(t)=in(t-1)
@@ -257,7 +257,7 @@ if out<0 then ng=1, else ng=0
 
 ## RAM
 
-![alt text](image-7.png)
+![alt text](img/image-7.png)
 
 - w (word width): 16-bit, 32-bit, 64-bit, ...
 
@@ -277,7 +277,7 @@ if out<0 then ng=1, else ng=0
 
 ## RAM Unit
 
-![alt text](image-8.png)
+![alt text](img/image-8.png)
 
 - RAMをn個組み合わせたユニット
 - 抽象化してかなりわかりやすくしている
@@ -299,7 +299,7 @@ if out<0 then ng=1, else ng=0
 
 ## 16-bit RAMチップ
 
-![alt text](image-9.png)
+![alt text](img/image-9.png)
 
 - RAM = Random Access Memory
   - この厚生内の任意のレジスタをランダムに選択して、同じアクセス時間でそのレジスタを読み書きできるという能力を表現
@@ -311,7 +311,7 @@ if out<0 then ng=1, else ng=0
   - Next: PC++
   - Goto: PC=n
 
-![alt text](image-10.png)
+![alt text](img/image-10.png)
 
 # 3.5 Project3 Overview
 
