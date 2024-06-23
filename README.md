@@ -7,3 +7,7 @@ https://www.coursera.org/learn/build-a-computer/
 
 コンピュータシステムの理論と実装
 https://www.oreilly.co.jp/books/9784873117126/
+
+## 学習メモ
+
+[note.md](note.md)
